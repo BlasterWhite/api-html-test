@@ -1,0 +1,22 @@
+body {
+    background: #262626;
+    color: white;
+    font-family: "raleway", sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back {
+    transition: 0.5s;
+    right: 50px;
+    padding-right: 50px;
+    font-size: 75px;
+    color: #79ebff;
+}
+
+.back:hover {
+    color: #2cdefd;
+}

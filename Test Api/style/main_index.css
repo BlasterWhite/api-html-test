@@ -1,0 +1,103 @@
+body {
+    background: #262626 ;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    margin: 12px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#yt {
+    color: rgb(250, 54, 54);
+    transition: 0.5s;
+    padding: 12px;
+}
+
+#yt:hover {
+    background: rgb(250, 54, 54);
+    color: white;
+    font-size: 60px;  
+}
+
+#twitter {
+    color: #23a5f5;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+#twitter:hover {
+    color: white;
+    background: #23a5f5;
+    font-size: 60px;
+}
+
+#discord {
+    color: rgb(114,137,218) ;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+#discord:hover {
+    color: white;
+    background: rgb(114,137,218);
+    font-size: 60px;
+}
+
+#twitch {
+    color: rgb(100, 65, 164);
+    transition: 0.5s;
+    padding: 12px;
+}
+
+#twitch:hover {
+    font-size: 60px;
+    background: rgb(100, 65, 164);
+    color: white;
+
+}
+
+.down {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: #0000008e;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.down a{
+    color:rgba(143, 5, 255, 1);
+}
+.pres {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 12px;
+    vertical-align: middle;
+    text-align: center ;
+}
+
+.btc_footer {
+    position: absolute;
+    bottom: 5px;
+    margin-left: 115px;
+}

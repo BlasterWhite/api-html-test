@@ -1,0 +1,12 @@
+body {
+	background-color: white;
+	text-decoration: none;
+	font-style: none;
+}
+/* Twitter */
+twitter-share-button {
+	width: 100px;
+	height: 100px;
+	color: yellow;
+	background-color: blue;
+}

@@ -1,0 +1,48 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://apis.google.com/js/platform.js"></script>
+  <title>Api Youtube</title>
+  <link type="text/css" rel="stylesheet" href="style/main_youtube.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html"><h1 class="back">&#8592; Retourner à l'acceuil</h1></a>
+    <div id="player"></div>
+    <script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: '9-zK_5gn4_s',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+			/** done = false arrete la video au temps de la value de stopVideo / true n'arrete pas la video**/
+      var done = true;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+		</script>
+		<h1>Générateur de Bouton d'abonnement youtube <a href="https://developers.google.com/youtube/youtube_subscribe_button">Ici</a></h1>
+    
+  </body>	
+</html>

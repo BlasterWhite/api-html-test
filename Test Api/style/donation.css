@@ -1,0 +1,36 @@
+body {
+    background: #262626;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+.back {
+    transition: 0.5s;
+    right: 50px;
+    padding-right: 50px;
+    font-size: 75px;
+    color: #79ebff;
+}
+
+.back:hover {
+    color: #2cdefd;
+}
+
+p {
+    font-size:25px
+}
+
+.qr {
+    position: absolute;
+    padding-left: 250px;
+    top: 130px;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
